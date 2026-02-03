@@ -2,78 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Dolibo | Landing Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dolibo | Personal Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav>
-    <h2 class="logo">Dolibo</h2>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="background"></div>
 
-  <header class="hero">
-    <div class="hero-text">
-      <h1>Hello, I'm <span>Dolibo</span></h1>
-      <h3>AI Creator • Web Enthusiast • Digital Designer</h3>
-      <p>I build modern digital experiences using creativity and technology.</p>
-      <button onclick="scrollTo('contact')">Contact Me</button>
-    </div>
+  <header class="glass-card hero fade-in-once">
+    <h1>Welcome to Dolibo</h1>
+    <h2>Ayoub Elguezouli</h2>
+    <p class="bio">Passionate about programming and video editing from Morocco 🇲🇦<br>
+I love creating digital experiences and learning new tech daily.</p>
+    <button id="contactBtn">Contact Me</button>
   </header>
 
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I'm Dolibo, a passionate digital creator focused on AI tools, web development,
-      and creative design. I love transforming ideas into clean, functional,
-      and visually engaging digital projects.
-    </p>
+  <section class="glass-card about fade-in-once delay1">
+    <h3>About Me</h3>
+    <p>Hello! I'm Ayoub, a Moroccan developer and video editor. I enjoy building websites, designing graphics, and sharing my projects with the world. My goal is to combine creativity with technology.</p>
   </section>
 
-  <section id="skills" class="section dark">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill">HTML5</div>
-      <div class="skill">CSS3</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">UI / UX Design</div>
-      <div class="skill">AI Tools</div>
-      <div class="skill">Content Creation</div>
+  <section class="glass-card features fade-in-once delay2">
+    <h3>My Skills</h3>
+    <div class="info">
+      <div>💻<p>Programming</p></div>
+      <div>🎬<p>Video Editing</p></div>
+      <div>📍<p>Morocco</p></div>
     </div>
   </section>
 
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="project">
-        <h3>AI Creative Page</h3>
-        <p>Content creation using artificial intelligence tools.</p>
-      </div>
-      <div class="project">
-        <h3>Personal Portfolio</h3>
-        <p>A modern responsive website built from scratch.</p>
-      </div>
-      <div class="project">
-        <h3>Design Concepts</h3>
-        <p>UI/UX and graphic design concepts for digital products.</p>
-      </div>
+  <footer class="glass-card fade-in-once delay3">
+    <p>&copy; 2026 Dolibo | All Rights Reserved</p>
+    <div class="social-icons">
+      <img src="facebook-icon.png" alt="Facebook" id="facebook">
+      <img src="snapchat-icon.png" alt="Snapchat" id="snapchat">
     </div>
-  </section>
-
-  <section id="contact" class="section dark">
-    <h2>Contact</h2>
-    <p>Email: <b>your@email.com</b></p>
-    <p>Facebook Page: <b>Dolibo</b></p>
-  </section>
-
-  <footer>
-    <p>© 2026 Dolibo — Built with passion.</p>
   </footer>
 
   <script src="script.js"></script>
