@@ -3,62 +3,61 @@
 
 <head>
  <meta charset="UTF-8">
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
- <title>Ayoub Elguezouli</title>
- <link rel="stylesheet" href="style.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <title>Portfolio</title>
 </head>
 
 <body>
- 
  <header>
   <img src="logo.svg" alt="logo" />
   <ul>
-   <li>Home</li>
-   <li>About</li>
-   <li>Works</li>
+   <li><a href="#hero">Home</a></li>
+   <li><a href="#about">About</a></li>
+   <li><a href="#work">Works</a></li>
   </ul>
  </header>
- <hr />
  
- <section class="hero">
- 	<img src="hero-illustration.png" alt="" class="illustration"/>
- 	<div>
- 		<h3>Welcome my name is Ayoub</h3>
- 	 <h1>Web developer</h1>
- 	 <p>My full name is Ayoub Elguezouli, I am Moroccan, I will be a big programmer in Morocco</p>
- 	 <div class="btn-box">
- 	 	<a href="#" class="about-btn">About me</a>
- 	 	<a href="#" class="contact">Contact me</a>
- 	 </div>
- 	</div>
+ <section id="hero">
+  <img class="illust" src="hero-illustration.png" alt="" />
+  <div>
+   <h3>My name's Ayoub</h3>
+   <h1>I am <span>Frontend developer</span></h1>
+   <p>My full name is Ayoub Elguezouli, I am Moroccan.</p>
+   <div class="btn">
+    <a href="#about" class="aboutBtn">About me</a>
+    <a href="#" class="contactBtn">Contact me</a>
+   </div>
+  </div>
  </section>
  
- <section class="about">
+ <section id="about">
   <div>
-   <h1 class="title">About me</h1>
+  <h1 class="title">About me</h1>
    <p>My name is Ayoub Elguezouli, a passionate developer based in Meknes, Morocco. I am constantly learning and improving my programming skills. I am also the founder and owner of Chromary, an application I created to bring my ideas to life.</p>
   </div>
-  <img src="about-illustration.png" alt="" class="illustration"/>
+  <img class="illust" src="about-illustration.png" alt="" />
  </section>
  
- <section class="works">
-  <div>
-   <h1 class="title">My works</h1>
+ <section id="work">
+  <h1 class="title">My works</h1>
+  <div>Nothing now
   </div>
-  <ul>
-   <img src="" alt="" />
-<!--   <img src="" alt="" />
-   <img src="" alt="" /> -->
-  </ul>
  </section>
  
- <hr class="footer"/>
  <footer>
   <ul>
-   <li>Home</li>
-   <li>About me</li>
-   <li>My works</li>
+   <li><a href="#hero">Home</a></li>
+   <li><a href="#about">About me</a></li>
+   <li><a href="#work">My works</a></li>
   </ul>
+<!--  <div class="socialMedia">
+   <a href="#"><i class="fa-brands fa-facebook"></i></a>
+   <a href="#"><i class="fa-brands fa-instagram"></i></a>
+   <a href="#"><i class="fa-brands fa-github"></i></a>
+  </div>  -->
+  <p>© 2026 Ayoub Elguezouli. All rights reserved.</p>
  </footer>
 </body>
 

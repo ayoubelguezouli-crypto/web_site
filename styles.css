@@ -1,0 +1,289 @@
+/* ==== General ==== */
+*{
+ margin: 0;
+ padding: 0;
+ font-family: sans-serif;
+}
+html{
+ scroll-behavior: smooth;
+}
+body{
+ background: #003;
+}
+.illust{
+ height: 250px;
+ width: 250px;
+}
+.title{
+ font-size: 50px;
+ color: #0000FF;
+}
+/* ==== Header section ==== */
+header{
+ background: #00003399;
+ height: 80px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 100%;
+ padding-top: 5px;
+ padding-bottom: 5px;
+ position: fixed;
+ backdrop-filter: blur(12px); 
+ border-bottom: 1px solid #FFFFFF77;
+}
+header img{
+ margin-left: 5%;
+ height: 60px;
+ width: 60px;
+}
+header ul{
+ display: flex;
+ list-style: none;
+ margin-right: 5%;
+}
+header a{
+ text-decoration: none;
+ margin-left: 30px;
+ font-weight: 500;
+ color: #fff;
+ font-size: 15px;
+ transition: .5s;
+}
+header a:hover{
+ color: #0000FF;
+ border-bottom: 1px solid #0000FF;
+}
+/* ==== Hero section ==== */
+#hero{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ color: #fff;
+ gap: 20px;
+}
+#hero h3{
+ font-size: 35px;
+ font-weight: 600;
+}
+#hero h1{
+ font-size: 40px;
+ font-weight: 400;
+}
+#hero span{
+ color: #0000FF;
+ font-weight: 800;
+}
+#hero p{
+ font-size: 20px;
+ font-weight: 500;
+}
+#hero .btn{
+ margin-top: 10px;
+ display: flex;
+ gap: 20px;
+}
+#hero a{
+ color: #fff;
+ font-size: 18px;
+ padding: 10px;
+ margin-top: 20px;
+ font-weight: 600;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background: #0000FF;
+ width: 110px;
+ height: 40px;
+ border-radius: 10px;
+ border: 2px solid #0000FF;
+ text-decoration: none;
+ transition: .5s;
+}
+#hero a:hover{
+ background: transparent;
+ color: #0000FF;
+ scale: 1.1;
+}
+/* ==== About section ==== */
+#about{
+ background: #000055B8;
+ display: flex;
+ height: 100vh;
+ justify-content: center;
+ align-items: center;
+ padding: 0 40px;
+ gap: 20px;
+}
+#about p{
+ color: #FFF;
+ font-size: 20px;
+ max-width: 600px;
+ text-align: justify;
+}
+/* ==== Work section ==== */
+#work{
+ padding: 90px 40px;
+ display: flex;
+ min-height: 100vh;
+ flex-direction: column;
+ justify-content: center;
+ gap: 20px;
+}
+#work div{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+ color: #fff;
+ gap: 15px;
+}
+#work img{
+ width: 200px;
+ height: 120px;
+ padding: 10px;
+ background: #000055B8;
+ border-radius: 15px;
+}
+/* ==== Footer section ==== */
+footer{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding: 20px 40px;
+ border-top: 1px solid #FFFFFF77;
+}
+footer ul{
+ display: flex;
+ flex-direction: column;
+ margin-right: auto;
+ list-style: none;
+}
+footer a{
+ font-size: 15px;
+ color: #fff;
+ text-decoration: none;
+}
+footer .socialMedia{
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+ gap: 20px;
+}
+footer .socialMedia a {
+ width: 40px;
+ height: 40px;
+ text-decoration: none;
+ background: #0000FF;
+ border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border: 1px solid #0000FF;
+ transition: .5s;
+}
+footer .socialMedia a i {
+ color: #FFF;
+ font-size: 20px;
+ transition: .5s;
+}
+footer a:hover {
+ background: transparent;
+}
+footer a:hover i {
+ color: #00F;
+}
+footer p{
+ margin-top: 10px;
+ font-size: 15px;
+ color: #fff;
+}
+
+/* ==== Mobile ==== */
+@media (max-width: 500px){
+ 
+ .illust{
+  height: 200px;
+  width: 200px;
+ }
+ .title{
+  font-size: 40px;
+ }
+ /* ==== Header section ==== */
+ header{
+  height: 50px;
+ }
+ header img{
+  height: 40px;
+  width: 40px;
+ }
+ header a{
+  font-size: 10px;
+  margin-left: 15px;
+ }
+ /* ==== Hero section ==== */
+ #hero{
+  display: flex;
+  flex-direction: column;
+ }
+ #hero > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ #hero h3{
+  font-size: 25px;
+ }
+ #hero h1{
+  font-size: 30px;
+ }
+ #hero p{
+  font-size: 15px;
+ }
+ #hero a{
+  font-size: 13px;
+  width: 90px;
+  height: 30px;
+ }
+ /* ==== About section ==== */
+ #about{
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+ }
+ #about div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+ }
+ #about p{
+  font-size: 15px;
+ }
+ /* ==== Work section ==== */
+ #work{
+  padding: 60px 20px;
+ }
+ #work img{
+  width: 160px;
+  height: 90px;
+ }
+ /* ==== Footer section ==== */
+ footer a{
+  font-size: 12px;
+ }
+ footer .socialMedia a{
+  height: 30px;
+  width: 30px;
+ }
+ footer p{
+  font-size: 10px;
+ }
+ footer .socialMedia a i{
+  font-size: 15px;
+ }
+}
